@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/quiz_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="26dp"
+            android:text="@string/quiz_name"
+            android:textColor="@color/TextHeaderColor"
+            android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/name_id"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quiz_id"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/name_string"
+                style="@style/Style6" />
+
+            <EditText
+                android:id="@+id/edit_text_1"
+                android:layout_below="@id/quiz_id"
+                android:layout_toRightOf="@id/name_id"
+                android:hint="@string/hint"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:inputType="text"
+                android:paddingLeft="4dp"
+                android:paddingRight="26dp"
+                style="@style/Style3" />
+
+        <LinearLayout
+            android:id="@+id/liner_layout_id"
+            android:layout_below="@id/name_id"
+            android:layout_alignParentLeft="true"
+            style="@style/style5"
+            android:padding="8dp">
+
+            <LinearLayout
+                style="@style/style4"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/string_3"
+                    style="@style/Style6"/>
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="@string/string_5"
+                    android:onClick="decrement"/>
+
+                <TextView
+                    android:id="@+id/age_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/string_6"
+                    style="@style/Style6"/>
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="@string/string_4"
+                    android:onClick="increment"/>
+            </LinearLayout>
+
+            <LinearLayout
+              style="@style/style5">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="@string/string1"
+                android:textColor="@color/Black"
+                android:textSize="26sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/question_1"
+                style="@style/Style6"/>
+
+            <LinearLayout
+                style="@style/style4"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <CheckBox
+                    android:id="@+id/number21"
+                    android:text="@string/option_1"
+                    style="@style/Style1"/>
+
+                <CheckBox
+                    android:id="@+id/number104"
+                    android:text="@string/option_2"
+                    style="@style/Style1"/>
+
+                <CheckBox
+                    android:id="@+id/number34"
+                    android:text="@string/option_3"
+                    style="@style/Style1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/question_2"
+                style="@style/Style6"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupOne"
+                style="@style/style5"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:text="@string/option_4"
+                    android:id="@+id/radioButtonOne"
+                    style="@style/Style2"
+                    android:onClick="checkRadioButton"
+                    />
+
+                <RadioButton
+                    android:text="@string/option_5"
+                    android:id="@+id/radioButtonTwo"
+                    style="@style/Style2"
+                    android:onClick="checkRadioButton" />
+
+                <RadioButton
+                    android:text="@string/option_6"
+                    android:id="@+id/radioButtonThree"
+                    style="@style/Style2"
+                    android:onClick="checkRadioButton" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/question_3"
+                style="@style/Style6"/>
+
+            <LinearLayout
+                style="@style/style5"
+                android:padding="8dp">
+
+                <CheckBox
+                    android:id="@+id/number10"
+                    android:text="@string/option_8"
+                    style="@style/Style2" />
+
+                <CheckBox
+                    android:id="@+id/numberMinus02"
+                    android:text="@string/option_9"
+                    style="@style/Style2"/>
+
+                <CheckBox
+                    android:id="@+id/numberMinus1"
+                    android:text="@string/option_10"
+                    style="@style/Style2"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_4"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                style="@style/Style6"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupTwo"
+                style="@style/style4"
+                android:padding="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton201"
+                    android:text="@string/option_11"
+                    style="@style/Style1"
+                    android:onClick="checkButtonTwo"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton202"
+                    android:text="@string/option_12"
+                    style="@style/Style1"
+                    android:onClick="checkButtonTwo"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton203"
+                    android:text="@string/option_13"
+                    style="@style/Style1"
+                    android:onClick="checkButtonTwo"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/question5_id"
+            android:layout_below="@id/liner_layout_id"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question_5"
+            style="@style/Style6"/>
+
+           <TextView
+               android:id="@+id/x_id"
+               android:layout_below="@id/question5_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="8dp"
+               android:text="@string/string_7"
+               style="@style/Style6"/>
+
+        <EditText
+            android:id="@+id/edit_text_2"
+            android:layout_below="@id/question5_id"
+            android:layout_toRightOf="@id/x_id"
+            style="@style/Style3"
+            android:hint="@string/string_6"
+            android:maxLength="3"
+            android:paddingBottom="8dp"
+            android:inputType="number"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/pointsAndResults_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_9"
+            android:layout_below="@id/edit_text_2"
+            android:textSize="20sp"
+            android:textColor="@color/TextHeaderColor"
+            android:paddingTop="20dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/results_id"
+            android:hint="@string/string_11"
+            android:layout_below="@id/pointsAndResults_id"
+            style="@style/Style3"
+            android:textColor="@color/Black"
+            android:paddingLeft="8dp"
+            android:paddingBottom="16dp"/>
+
+
+       <Button
+           android:id="@+id/sumbit_button_id"
+           android:padding="16dp"
+           android:text="@string/string_8"
+           android:layout_below="@id/results_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/Black"
+           android:gravity="center"
+           android:onClick="Results"/>
+
+
+    </RelativeLayout>
+</ScrollView>

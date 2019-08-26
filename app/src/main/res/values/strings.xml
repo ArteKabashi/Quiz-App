@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz_name">Math Quiz</string>
+    <string name="name_string">Name:</string>
+    <string name="string1">Questions</string>
+    <string name="hint">Insert your name here!</string>
+    <string name="string_2">How good are you at math,answer below:</string>
+    <string name="string_3">Age:</string>
+    <string name="string_4">+</string>
+    <string name="string_5">-</string>
+    <string name="string_6">0</string>
+    <string name="string_7">X = </string>
+    <string name="string_8">SUBMIT</string>
+    <string name="string_9">Results and Points:</string>
+    <string name="string_10">Select one</string>
+    <string name="string_11">Results</string>
+    <string name="question_1">1) What are the next two numbers in the sequence? \n 0, 1, 1, 2, 3, 5, 8, 13, ?</string>
+    <string name="question_2">2) 70% of 30 is equal to:</string>
+    <string name="question_5">5) For 8*X=32.</string>
+    <string name="question_3">3) 5x2 + 6x + 1 = 0. Select x1 and x2.</string>
+    <string name="question_4">4)"It's dark. You have ten grey socks and ten blue socks you want to put into pairs. All socks are exactly the same except for their colour. How many socks would you need to take with you to ensure you had at least a pair?"</string>
+    <string name="option_1">21</string>
+    <string name="option_2">104</string>
+    <string name="option_3">34</string>
+    <string name="option_4">7</string>
+    <string name="option_5">17</string>
+    <string name="option_6">21</string>
+    <string name="option_8">10</string>
+    <string name="option_9">-0.2</string>
+    <string name="option_10">-1</string>
+    <string name="option_11">4</string>
+    <string name="option_12">3</string>
+    <string name="option_13">6</string>
+    <string-array name="List1">
+        <item>Very good.</item>
+        <item>Good.</item>
+        <item>Not bad.</item>
+        <item>Bad.</item>
+        <item>Meh..</item>
+    </string-array>
+
+</resources>
